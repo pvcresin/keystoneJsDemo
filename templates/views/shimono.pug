@@ -1,0 +1,12 @@
+extends ../layouts/default
+
+
+block content
+	.container: .jumbotron
+		h1 shimono
+
+		ul
+			each entry in entries
+				li
+					h3 #{entry.title}
+					p !{entry.content}
